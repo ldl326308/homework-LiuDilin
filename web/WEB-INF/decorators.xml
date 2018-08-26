@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- defaultdir 是模板所在的文件夹路径 -->
+<decorators defaultdir="/layouts">
+
+    <!-- 下面是过滤css和js文件，按实际情况写 -->
+    <excludes>
+        <pattern>/assets/*</pattern>
+    </excludes>
+
+    <!-- /* 所有页面，按模板 phone_template.jsp 来修饰 -->
+    <decorator name="phone" page="phone_template.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+
+</decorators>
